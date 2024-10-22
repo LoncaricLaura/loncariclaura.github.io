@@ -1,5 +1,8 @@
 <template>
-  <div>
-    MY PERSONAL WEB PAGE
-  </div>
+    <main class="bg-[#020102] w-full josefin-sans pb-10 md:pb-32 overflow-none">
+        <div class="">
+            <Header />  
+            <HeroSection />
+        </div>
+    </main>
 </template>
