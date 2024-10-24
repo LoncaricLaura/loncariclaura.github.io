@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { scrollToSection } from '/composables/scrollToSection.ts'
 
 const isMenuOpen = ref(false);
 const isScrolled = ref(false);
@@ -9,7 +10,7 @@ const toggleMobMenu = () => {
 };
 
 const handleScroll = () => {
-    isScrolled.value = window.scrollY > 100; // Adjust the threshold as needed
+    isScrolled.value = window.scrollY > 100;
 };
 
 onMounted(() => {
@@ -24,11 +25,11 @@ onBeforeUnmount(() => {
 <template>
     <main class="fixed z-40 top-0 h-fit w-full transition-colors duration-300">
         <div :class="[
-            'hidden sm:flex flex-row justify-end gap-6 md:gap-12 px-4 md:px-16 lg:px-24 xl:px-32 py-6 w-full text-xl text-zinc-400 md:text-gray',
+            'hidden sm:flex flex-row justify-end gap-6 md:gap-12 px-4 md:px-16 lg:px-24 xl:px-32 py-4 w-full text-xl text-zinc-400 md:text-gray',
             isScrolled ? 'main bg-gradient-to-r from-transparent to-[#020102]' : 'bg-transparent'
         ]">
-            <p class="cursor-pointer">About</p>
-            <p class="cursor-pointer">Projects</p>
+            <p class="cursor-pointer" @click="scrollToSection('about')">About</p>
+            <p class="cursor-pointer" @click="scrollToSection('projects')">Projects</p>
         </div>
 
         <div class="absolute right-4 sm:hidden flex justify-end items-center py-6 z-50">
@@ -39,7 +40,7 @@ onBeforeUnmount(() => {
             </button>
         </div>
 
-        <MobileMenu v-if="isMenuOpen" :isMenuOpen="isMenuOpen" />
+        <MobileMenu v-if="isMenuOpen" @toggleMobMenu="toggleMobMenu" />
     </main>
 </template>
 

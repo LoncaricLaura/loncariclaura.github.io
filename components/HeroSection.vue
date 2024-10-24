@@ -11,6 +11,5 @@
                 <p class="text-sm sm:text-lg bg-gray-700/30 px-2 py-1 rounded-full w-fit">Web developer</p>
             </div>
         </div>
-        <!-- <img src="/public/img/arrow-down.png" alt="Icon arrow down" class="absolute z-50 right-[50%] bottom-4 animate-bounce" /> -->
     </main>
 </template>

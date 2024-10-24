@@ -23,10 +23,10 @@ const props = defineProps({
                 <img src="/public/img/languages-icon.png" alt="Icon" class="w-auto h-5">
                 <p>{{ project.tools.join(', ') }}</p>
             </div>
-            <div class="flex gap-x-4 pt-4 break-all">
+            <NuxtLink :to="project.github" class="flex gap-x-4 pt-4 break-all cursor-pointer" target="_blank">
                 <img src="/public/img/github-icon.png" alt="Icon" class="w-6 h-6">
                 <p>{{ project.github }}</p>
-            </div>
+            </NuxtLink>
         </div>
     </div>
 </template>
