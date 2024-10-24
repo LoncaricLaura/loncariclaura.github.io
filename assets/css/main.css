@@ -9,7 +9,22 @@
   font-style: normal;
 }
 
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 /* Font color */
 .text-gray {
   color: #63615a;
+}
+
+.text-pink {
+  color: #d4a9b0;
+}
+
+.text-gray-dark {
+  color: #020102;
 }

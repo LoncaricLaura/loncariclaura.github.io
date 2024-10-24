@@ -1,0 +1,27 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Development of a Web3 application for realizing a decentralized social network",
+            "desc": "Spark is a decentralized social network that allows users to create, share and store content through blockchain technologies and IPFS.",
+            "tools": ["Next.js, Hardhat, Solidity, IPFS, ethers.js"],
+            "github": "https://github.com/LoncaricLaura/decentralized-socNet-web3"
+        },
+
+        {
+            "id": 2,
+            "name": "Real time data application",
+            "desc": "The topic of this project is building a functional application for real-time data processing, with a focus on collecting environmental data over a long period of time and performing statistical analysis. The system uses Raspberry Pi for data collection and Haskell for processing and analysis.",
+            "tools": ["Haskell"],
+            "github": "https://github.com/LoncaricLaura/real-time-data-app"
+        },
+
+        {
+            "id": 3,
+            "name": "SmileWithUs",
+            "desc": "Development of a web application intended for online ordering of dental appointments",
+            "tools": ["Vue.js", "Firebase"],
+            "github": "https://github.com/LoncaricLaura/SmileWithUs"
+        }
+    ]
+}

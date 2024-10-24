@@ -3,6 +3,8 @@
         <div class="">
             <Header /> 
             <HeroSection />
+            <AboutSection />
+            <ProjectSection />
         </div>
     </main>
 </template>

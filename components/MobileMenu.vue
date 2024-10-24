@@ -15,7 +15,6 @@ const props = defineProps({
       <div @click="isMenuOpen = !isMenuOpen" class="flex flex-col items-start justify-center gap-y-6 cursor-pointer text-[#d4a9b0] text-xl">
         <NuxtLink to="/" class="cursor-pointer">About</NuxtLink>
         <NuxtLink to="/" class="cursor-pointer">Projects</NuxtLink>
-        <NuxtLink to="/" class="cursor-pointer">Contact</NuxtLink>
       </div>
     </main>
   </template>
